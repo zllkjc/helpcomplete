@@ -1,0 +1,24 @@
+{
+  "name": "helpcomplete",
+  "version": "0.1.0",
+  "description": "Generic Bash completion fallback that introspects `--help` output for CLIs without native completion.",
+  "bin": {
+    "helpcomplete": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p . && mkdir -p dist/templates && cp src/templates/*.tpl dist/templates/ && chmod +x dist/cli.js",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
+  },
+  "license": "MIT"
+}
