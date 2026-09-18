@@ -1,7 +1,23 @@
 {
   "name": "helpcomplete",
   "version": "0.1.0",
-  "description": "Generic Bash completion fallback that introspects `--help` output for CLIs without native completion.",
+  "description": "Generic Bash/Zsh completion fallback that introspects `--help` output for CLIs without native completion.",
+  "keywords": [
+    "bash",
+    "zsh",
+    "completion",
+    "autocomplete",
+    "cli",
+    "shell"
+  ],
+  "homepage": "https://github.com/zllkjc/helpcomplete#readme",
+  "bugs": {
+    "url": "https://github.com/zllkjc/helpcomplete/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zllkjc/helpcomplete.git"
+  },
   "bin": {
     "helpcomplete": "dist/cli.js"
   },
